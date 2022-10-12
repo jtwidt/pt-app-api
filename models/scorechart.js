@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class ScoreCharts extends Model {
+  class ScoreChart extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -11,10 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      ScoreChart.hasMany(models.ScoreHistory, {foreignKey: 'exerciseId'})
     }
   }
 
-  ScoreCharts.init({
+  ScoreChart.init({
     exerciseName: DataTypes.STRING,
     exerciseGroup: DataTypes.ENUM('Cardio', 'UpperBody', 'Core'),
     gender: DataTypes.ENUM('Male', 'Female'),
@@ -25,8 +26,8 @@ module.exports = (sequelize, DataTypes) => {
     points: DataTypes.DOUBLE
   }, {
     sequelize,
-    modelName: 'ScoreCharts',
+    modelName: 'ScoreChart',
     timestamps: false
   });
-  return ScoreCharts;
+  return ScoreChart;
 };
