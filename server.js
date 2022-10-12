@@ -2,9 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 const cors = require('cors');
-// const db = requires('./models/index');
+const db = require('./models/index');
 
-const routes = require('/routes');
+const routes = require('./routes');
 
 const PORT = process.env.PORT || 3001;
 
@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use('/', routes);
 
-// db.sequelize.sync();
+db.sequelize.sync();
 
 app.listen(PORT, () => console.log(`USAF PT Test API server is up and running on port ${PORT}`));
 

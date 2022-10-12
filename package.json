@@ -4,10 +4,10 @@
   "description": "API for PT Score Mobile App",
   "main": "server.js",
   "scripts": {
-    "dev": "NODE_ENV=development nodemon server.js",
+    "dev": "cross-env NODE_ENV=development nodemon server.js",
     "start": "node server.js",
     "serve": "npx sequelize-cli db:migrate && nodemon server.js",
-    "db:create:dev": "NODE_ENV=development npx sequelize-cli db:create",
+    "db:create:dev": "cross-env NODE_ENV=development npx sequelize-cli db:create",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "db:reset:serve": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && node server.js",
     "db:create:test": "cross-env NODE_ENV=test npx sequelize-cli db:create",
