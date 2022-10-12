@@ -11,7 +11,7 @@ module.exports = {
         lowerAge: 0,
         upperAge: 24,
         lowerLimit: 67,
-        upperLimit: 200,
+        upperLimit: 999,
         points: 20.0,
       },
       {
