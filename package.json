@@ -4,6 +4,13 @@
   "description": "API for PT Score Mobile App",
   "main": "server.js",
   "scripts": {
+    "dev": "NODE_ENV=development nodemon server.js",
+    "start": "node server.js",
+    "serve": "npx sequelize-cli db:migrate && nodemon server.js",
+    "db:create:dev": "NODE_ENV=development npx sequelize-cli db:create",
+    "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+    "db:reset:serve": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all && node server.js",
+    "db:create:test": "cross-env NODE_ENV=test npx sequelize-cli db:create",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +32,7 @@
     "sequelize": "^6.25.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.20",
     "sequelize-cli": "^6.5.1"
   }
