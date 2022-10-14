@@ -12,7 +12,7 @@ router.post('/user', userController.createUser);
 
 // Score History
 router.post('/history', historyController.createHistoryEntry);
-router.get('/history/:id', historyController.getAllUserHistory);
-router.get('/history/:id/dates', historyController.getUserHistoryByDate);
+router.get('/history/:userId', historyController.getAllUserHistory);
+router.get('/history/:userId/dates', historyController.getUserHistoryByDate);
 
 module.exports = router;

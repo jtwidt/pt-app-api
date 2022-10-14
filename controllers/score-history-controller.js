@@ -41,7 +41,7 @@ const createHistoryEntry = async (req, res) => {
       testDate,
       isDiagnostic,
     };
-    const history = ScoreHistory.create(newHistory);
+    const history = await ScoreHistory.create(newHistory);
     return res.status(201).json({history});
 
   } catch (err) {
