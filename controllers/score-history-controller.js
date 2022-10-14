@@ -9,7 +9,11 @@ const {Op} = require("sequelize");
 const createHistoryEntry = async (req, res) => {
   try {
     const {userId, exerciseName, value, testDate, isDiagnostic} = req.body;
-    const user = await User.findByPk(userId);
+    const user = await User.findOne({
+      where: {
+        id: userId
+      }
+    });
     const userGender = user.gender;
     const userAge = calculateAge(user.birthDate);
     const exercise = await ScoreChart.findOne({
@@ -22,9 +26,12 @@ const createHistoryEntry = async (req, res) => {
         upperAge: {
           [Op.gte]: userAge
         },
-        value: {
-          [Op.between]: [lowerLimit, upperLimit]
-        }
+        lowerLimit: {
+          [Op.lte]: value
+        },
+        upperLimit: {
+          [Op.gte]: value
+        },
       }
     });
     const newHistory = {
