@@ -1,7 +1,7 @@
 const {User} = require('../models');
 const bcrypt = require('bcryptjs');
 
-const createUser = async (req, res) => {
+const registerUser = async (req, res) => {
   try {
     let userInfo = req.body;
     const salt = await bcrypt.genSalt(10);
@@ -15,5 +15,5 @@ const createUser = async (req, res) => {
 }
 
 module.exports = {
-  createUser,
+  registerUser,
 }

@@ -1,6 +1,6 @@
 const {Router} = require('express');
 const historyController = require('../controllers/score-history-controller');
-const userController = require('../controllers/user-controller');
+const authController = require('../controllers/auth-controller');
 const router = Router();
 
 router.get('/', (req, res) => {
@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
 });
 
 // User
-router.post('/user', userController.createUser);
+router.post('/user', authController.registerUser);
 
 // Score History
 router.post('/history', historyController.createHistoryEntry);
