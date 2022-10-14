@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.bulkInsert('ScoreCharts', [
+    await queryInterface.bulkInsert('ScoreChart', [
       {
         exerciseName: '1 Min Push-ups',
         exerciseGroup: 'UpperBody',
