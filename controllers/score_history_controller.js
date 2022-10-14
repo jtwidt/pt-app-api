@@ -3,7 +3,7 @@ const {
   User,
   ScoreChart
 } = require('../models');
-const {getAge} = require('../utilities/helpers');
+const {calculateAge} = require('../utilities/helpers');
 const {Op} = require("sequelize");
 
 const createHistoryEntry = async (req, res) => {
@@ -11,7 +11,7 @@ const createHistoryEntry = async (req, res) => {
     const {userId, exerciseName, value, testDate, isDiagnostic} = req.body;
     const user = await User.findByPk(userId);
     const userGender = user.gender;
-    const userAge = getAge(user.birthDate);
+    const userAge = calculateAge(user.birthDate);
     const exercise = await ScoreChart.findOne({
       where: {
         gender: userGender,
