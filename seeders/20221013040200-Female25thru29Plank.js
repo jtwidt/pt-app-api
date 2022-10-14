@@ -7,7 +7,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 205,
@@ -17,7 +17,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 200,
@@ -27,7 +27,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 194,
@@ -37,7 +37,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 187,
@@ -47,7 +47,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 180,
@@ -57,7 +57,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 160,
@@ -67,7 +67,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 140,
@@ -77,7 +77,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 120,
@@ -87,7 +87,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 100,
@@ -97,7 +97,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 80,
@@ -107,7 +107,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 60,
@@ -117,7 +117,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 55,
@@ -127,7 +127,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 50,
@@ -137,7 +137,7 @@ module.exports = {
       {
         exerciseName: 'Forearm Plank Time (mm:ss)',
         exerciseGroup: 'Core',
-        gender: 'Male',
+        gender: 'Female',
         lowerAge: 25,
         upperAge: 29,
         lowerLimit: 0,
